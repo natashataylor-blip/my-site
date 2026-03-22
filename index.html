@@ -1563,19 +1563,63 @@ p, li {
         <div class="pipeline-stage">
           <div class="stage-name" style="color:var(--red);">ASAP</div>
           <div class="stage-desc">Needs immediate proactive comms.</div>
+          <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(221,238,248,0.07);font-size:11px;color:var(--text-faint);line-height:1.6;">Logged in during the impacted period and account impact is <span style="color:var(--red);font-weight:600;">high</span>.</div>
         </div>
         <div class="pipeline-stage">
           <div class="stage-name" style="color:var(--orange);">THIS WEEK</div>
           <div class="stage-desc">Action required in the next few days.</div>
+          <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(221,238,248,0.07);font-size:11px;color:var(--text-faint);line-height:1.6;">Logged in during the impacted period and account impact is <span style="color:var(--orange);font-weight:600;">medium</span>.</div>
         </div>
         <div class="pipeline-stage">
           <div class="stage-name" style="color:var(--yellow);">NEXT WEEK</div>
           <div class="stage-desc">On the radar but not urgent.</div>
+          <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(221,238,248,0.07);font-size:11px;color:var(--text-faint);line-height:1.6;">Logged in during the impacted period and account impact is <span style="color:var(--yellow);font-weight:600;">low</span>.</div>
         </div>
         <div class="pipeline-stage">
           <div class="stage-name" style="color:var(--teal);">NO ACTION REQUIRED</div>
           <div class="stage-desc">No outreach needed right now.</div>
+          <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(221,238,248,0.07);font-size:11px;color:var(--text-faint);line-height:1.6;">Have not logged in during the impacted period. Potentially a churned account.</div>
         </div>
+      </div>
+    </div>
+
+    <!-- Today's ask -->
+    <div style="margin-top:34px;" class="fade-in stagger-5">
+      <h3 style="margin-bottom:16px;">Today's ask</h3>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
+
+        <!-- Brand Champs -->
+        <div style="background:rgba(58,191,172,0.05);border:1px solid rgba(58,191,172,0.18);border-radius:12px;padding:20px 22px;">
+          <p style="font-family:'Inter',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--teal);margin-bottom:8px;">Brand Champs</p>
+          <p style="font-size:13px;color:var(--text-dim);line-height:1.6;margin-bottom:12px;">Pull a summary of your <strong style="color:var(--text);">ASAP</strong> and <strong style="color:var(--text);">This week</strong> priority accounts with renewal date, ARR, deal stage, account health, upsell in flight, and account impact into a table.</p>
+          <ol style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;counter-reset:ask-counter;">
+            <li style="display:flex;align-items:flex-start;gap:10px;font-size:12px;color:var(--text-dim);line-height:1.6;">
+              <span style="flex-shrink:0;width:18px;height:18px;border-radius:50%;border:1px solid rgba(58,191,172,0.3);display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:var(--teal);margin-top:1px;">1</span>
+              Sense check the impact and use your commercial and relationship overlay to update priority.
+            </li>
+            <li style="display:flex;align-items:flex-start;gap:10px;font-size:12px;color:var(--text-dim);line-height:1.6;">
+              <span style="flex-shrink:0;width:18px;height:18px;border-radius:50%;border:1px solid rgba(58,191,172,0.3);display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:var(--teal);margin-top:1px;">2</span>
+              If high priority, set <strong style="color:var(--text);">High Risk</strong> to <span class="highlight">yes</span> as a further urgent segment for us to plan around.
+            </li>
+            <li style="display:flex;align-items:flex-start;gap:10px;font-size:12px;color:var(--text-dim);line-height:1.6;">
+              <span style="flex-shrink:0;width:18px;height:18px;border-radius:50%;border:1px solid rgba(58,191,172,0.3);display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:var(--teal);margin-top:1px;">3</span>
+              Review deal stage for all accounts. The Notion tracker backfill is complete but please QA the stage. If you've already had funnel decline calls, this is a great time to run the <span class="highlight">/postcall</span> command.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Strategic Account Managers -->
+        <div style="background:rgba(221,238,248,0.04);border:1px solid rgba(221,238,248,0.1);border-radius:12px;padding:20px 22px;">
+          <p style="font-family:'Inter',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-faint);margin-bottom:8px;">Strategic Account Managers</p>
+          <p style="font-size:13px;color:var(--text-dim);line-height:1.6;">Pull a summary of accounts where you are tagged as the account manager and sense check if the deals in flight are correct.</p>
+        </div>
+
+        <!-- Partnerships -->
+        <div style="background:rgba(139,92,246,0.05);border:1px solid rgba(139,92,246,0.18);border-radius:12px;padding:20px 22px;">
+          <p style="font-family:'Inter',sans-serif;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(167,139,250,0.9);margin-bottom:8px;">Partnerships</p>
+          <p style="font-size:13px;color:var(--text-dim);line-height:1.6;">Filter by <strong style="color:var(--text);">'no deal owner'</strong> and claim the ones you know. Continue supporting reactively until we have the next phase of data for a broader comms strategy.</p>
+        </div>
+
       </div>
     </div>
 
